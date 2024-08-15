@@ -1,20 +1,18 @@
 import json
 
-PATH_FILE = 'data_recreate.json'
+PATH_FILE = 'recreate_data.json'
 
 
 class Person:
-
     def __init__(self, name, age):
         self.name = name
         self.age = age
 
 
-p1 = Person('John', 24)
-p2 = Person('Mary', 30)
-
-db = [p1.__dict__, p2.__dict__]
+p1 = Person('Angel', 25)
+p2 = Person('Eduardo', 30)
+bd = [p1.__dict__, p2.__dict__]
 
 
 with open(PATH_FILE, 'w') as file:
-    json.dump(db, file, indent=4)
+    json.dump(bd, file)
