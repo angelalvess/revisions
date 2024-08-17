@@ -1,0 +1,3 @@
+log, logprint, log file
+eletronic, smartphone
+main executar tudo
